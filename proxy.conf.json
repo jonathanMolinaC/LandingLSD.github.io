@@ -1,0 +1,7 @@
+{
+    "/v3/*": {
+        "target": "https://oauth.brightcove.com",
+        "secure": false,
+        "changeOrigin":true
+    }
+}

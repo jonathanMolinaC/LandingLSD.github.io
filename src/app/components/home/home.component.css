@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*Main Carousel Style*/
+/*General Table Style*/
+/*Responsive Table Style*/
+/*Animated Box Style*/
+/*Additional Information Style*/
+.carousel-caption{
+  margin-bottom: 40px;
+}
+.carousel-caption h1{
+  font-size:50px;
+  margin-bottom: 40px;
+}
+.carousel-caption p{
+  font-size:30px;
+  margin-bottom: 40px;
+  text-overflow: clip;
+  line-height: 1;
+}
+.carousel-caption button{
+  font-size: 20px;
+  padding:10px;
+  background-color: gray;
+  color:white;
+}
+@media screen and (min-width: 888px){
+  .carousel-caption{
+    right:200p;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+  .carousel-caption h1{
+    font-size:60px;
+    margin-bottom: 40px;
+  }
+  .carousel-caption p{
+    font-size:40px;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+  .carousel-caption button{
+    font-size: 30px;
+    padding:10px;
+    background-color: gray;
+    color:white;
+  }
+}
+td{
+  padding: 10px;
+  height: fit-content; 
+}
+.title2 {
+
+  text-align: center;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size: 28.6px;
+}
+.pass{
+ 
+  height: 400px;
+}
+h2{
+  text-align: center;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28.6px;
+ 
+}
+.contain{
+
+  width: 100%;
+}
+.divresponsive{
+  background-color: transparent;  
+  height:36vh;
+  width:65vh;
+  position: relative;
+  left:30.5%;
+  top: -375px;  
+ 
+  
+}
+@media screen and (min-width: 888px){
+    .responsiveTable{
+      display: none;
+    }
+}
+@media screen and (max-width: 888px) {
+
+  .responsive{
+    position: relative;
+    left: 20vh;
+    margin-bottom: 50px;
+  }
+  .generalTable{
+    display: none;
+  }
+  
+  .divresponsive{
+    background-color: transparent;
+    height:36vh;
+    width:65vh;
+    position:relative;
+    left:140px;
+    right:0;
+    top:-360px;
+    bottom:0;
+    
+    
+  }
+  .responsiveTable{
+    position: relative;
+    top: 340px;
+    width: 100%;
+    height: auto;
+  }
+  .responsiveTable tr{
+  
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.generalTable{
+  border-style: none;
+  top: 300px;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.generalTable th{
+  text-align: center;
+}
+.title{
+  text-align: center;
+  margin: 0px;
+}
+
+.BoxFabry {
+  background-color: blue;
+  margin-left: 90px;
+  margin-right: 100px;
+  padding: 50px;
+  height: 130px;
+  display: flex;
+  width: 19%;
+  align-items: center;
+  justify-content:center;
+  
+}
+.BoxFabryR{
+  background-color: blue;
+  margin-left: 210px;
+  margin-right: 100px;
+  padding: 50px;
+  height: 130px;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content:center;
+  
+}
+#circle {
+
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .BoxFabry {
+    margin-left: 65px;
+    transition: ease-in-out;
+  }
+}
+@media screen and (max-width: 800px) {
+  .BoxFabryR{
+    margin-left: 170px;
+    transition: ease-in-out;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .BoxFabryR{
+    margin-left: 120px;
+    transition: ease-in-out;
+  }
+  
+}
+.colorFabry {
+  background-color: #8CB0CD;
+}
+.colorGaucher{
+  background-color: #ED1C24;
+}
+.colorHunter{
+  background-color: #3FB5B6;
+}
+
+.BoxFabry:hover,.BoxFabryR:hover{
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  color:black;
+  
+}

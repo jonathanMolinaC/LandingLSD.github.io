@@ -1,0 +1,117 @@
+<!--General Carousel that display the main images -->
+<!--Use the ItemPhoto object to display the information-->
+<div class="carousel">
+<ngb-carousel *ngIf="images" [showNavigationIndicators]="true" style="position:absolute;width:100%">
+  <!--List of items-->
+  <ng-template ngbSlide *ngFor="let photo of photos" >
+    <div class="picsum-img-wrapper">
+      <img width="100%" height="350vh" [src]="photo.image">
+    </div>
+    <div class="carousel-caption">
+      <!--Tile-->
+      <h1>{{photo.title}}</h1>
+      <!--description-->
+      <p>{{photo.description}}</p>
+      <!--Button-->
+      <button id="circle">Enterate de {{photo.title}}</button>
+    </div>
+  </ng-template>
+</ngb-carousel>
+</div>
+<!--Table that orginize the content video blocks in the general view-->
+<table class="generalTable">
+  <tbody>
+    <tr>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a routerLink="/section">
+          <!--Color animated box for Fabry-->
+          <div class="BoxFabry title2 colorFabry" id="circle" @enterState style="position:absolute;"[@hovers]="mhovers" (mouseover)="animar()" (mouseout)="animar()" >
+              <p> FABRY</p> 
+          </div>
+        </a> 
+        <!--Brightcove list display in a video block for Fabry-->
+        <iframe style="display:block;border:none;width:100%;height:80%;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+      </td>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a routerLink="/section">
+          <!--Color animated box for Gaucher-->
+          <div class="BoxFabry title2 colorGaucher" id="circle" @enterState style="position:absolute;" [@hovers]="mhoversG" (mouseover)="animarG()" (mouseout)="animarG()">
+            <p> GAUCHER</p> 
+          </div>
+        </a>
+        <!--Brightcove list display in a video block for Gaucher-->
+        <iframe style="display:block;border:none;width:100%;height:80%;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+      </td>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a routerLink="/section">
+          <!--Color animated box for Hunter-->
+          <div class="BoxFabry title2 colorHunter" id="circle" @enterState style="position:absolute;" [@hovers]="mhoversH" (mouseover)="animarH()" (mouseout)="animarH()">
+            <p> HUNTER</p> 
+          </div>
+        </a>
+        <!--Brightcove list display in a video block for Hunter-->
+        <iframe style="display:block;border:none;width:100%;height:80%;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--Table that orginize the content video blocks in the responsive view-->
+<table class="responsiveTable">
+  <tbody>
+    <tr>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a [routerLink]="['/section']">
+          <!--Color animated box for Fabry-->
+          <div class="BoxFabryR title2 colorFabry" id="circle" @enterState style="position:absolute;" [@hovers]="mhovers" (mouseenter)="animar()" (mouseout)="animar()">       
+            <p [routerLink]="['/section']">FABRY</p>
+          </div>
+        </a>
+        <div class="pass">
+          <!--Brightcove list display in a video block for Fabry-->
+          <iframe style="display:block;border:none;width:80%;height:100%;margin:0 auto;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        </div>   
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a [routerLink]="['/section']">
+          <!--Color animated box for Gaucher-->
+          <div class="BoxFabryR title2 colorGaucher" id="circle" @enterState style="position:absolute;" [@hovers]="mhoversG" (mouseover)="animarG()" (mouseout)="animarG()">
+             <p>GAUCHER</p>
+           </div>
+        </a>
+        <div class="pass">
+          <!--Brightcove list display in a video block for Gaucher-->
+          <iframe style="display:block;border:none;width:80%;height:100%;margin:0 auto;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        </div>      
+      </td>
+    </tr> 
+    <tr>
+      <td>
+        <!--Link that redirect to the specific section-->
+        <a [routerLink]="['/section']">
+          <!--Color animated box for Hunter-->
+          <div class="BoxFabryR title2 colorHunter" id="circle" @enterState style="position:absolute;" [@hovers]="mhoversH" (mouseover)="animarH()" (mouseout)="animarH()">
+            <p>HUNTER</p>
+          </div>
+        </a>
+        <div class="pass">
+          <!--Brightcove list display in a video block for Hunter-->
+          <iframe style="display:block;border:none;width:80%;height:100%;margin:0 auto;position:relative;top: 100px;" src="https://players.brightcove.net/3871979173001/experience_608471f6bad4ce00221c7b19/index.html" allow="autoplay; fullscreen; geolocation; encrypted-media" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        </div>      
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--Animated box that contains aditional information-->
+<div style="align-content: center;justify-content: center;width: 100%;height: 200px;margin-bottom: 100px;text-align:left; margin-top: 370px">
+  <div  [class.animado]="inAnimation" style="background-color: #3F468A; box-shadow: 10px 5px 5px black;margin-top: 40px;width: 68%;height: 200px;margin-left:16%;" [@slide]="mSlide3" id="circle">
+  </div>
+</div>
+
+

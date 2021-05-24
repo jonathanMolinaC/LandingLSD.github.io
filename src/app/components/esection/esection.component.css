@@ -1,0 +1,35 @@
+.t-video{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-top: 3vw;
+
+}
+.t-video_info{
+    margin-right: 10vw;
+    width: 40%;
+    text-align: center;
+ 
+}
+
+h1 {
+    margin-left: 10vw;
+    margin-top:  2vw;
+}
+.l-video{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+}
+.l-video_info{
+    margin-left: 2vw;
+    width: 40%; 
+    text-align: center;
+}
+.t-video-content{
+    height: 215;
+    width: 45%;
+ 
+}
