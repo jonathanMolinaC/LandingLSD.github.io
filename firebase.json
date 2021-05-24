@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/LandingLSD",
+    "public": "dist/LandingLSD/*",
     "ignore": [
       "firebase.json",
       "**/.*",
