@@ -8,12 +8,14 @@ import { HomeComponent } from './components/home/home.component';
 import { SpecificationComponent} from './components/specification/specification.component';
 import { ESectionComponent } from './components/esection/esection.component';
 
+//Routes for each component
 const appRoutes : Routes = [
   {path:'', component: HomeComponent},
   {path:'VideoSpecifications/:videoId',component: SpecificationComponent},
   {path:'section',component:ESectionComponent},
   {path: '**', component:HomeComponent}
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
